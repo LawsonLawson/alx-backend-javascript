@@ -13,6 +13,6 @@
  * @throws {TypeError} If the first parameter is not a set or the second
  * parameter is not an array.
  */
-export default function hasValuesFromArray (set, array) {
+export default function hasValuesFromArray(set, array) {
   return array.every((value) => set.has(value));
 }
