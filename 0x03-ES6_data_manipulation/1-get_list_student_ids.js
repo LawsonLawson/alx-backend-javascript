@@ -12,6 +12,7 @@
  * @param {String} students[].firstname - The first name of the student.
  * @param {String} students[].location - The location of the student.
  * @returns {Array<Number>} An array of student IDs.
+ * @throws {TypeError} If the input is not an array.
  */
 export default function getListStudentIds(students) {
   if (students instanceof Array) {
