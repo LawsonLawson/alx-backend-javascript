@@ -7,7 +7,7 @@
  *
  * @function
  * @name groceriesList
- * @returns {Map<string, number>} A `Map` where keyes are grocery names and
+ * @returns {Map<string, number>} A `Map` where keys are grocery names and
  * values are their quantities.
  */
 export default function groceriesList() {
