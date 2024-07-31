@@ -26,3 +26,17 @@ export interface Directors extends Teacher {
 export interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
+
+/**
+ * Function to print a teacher's name in a specific format.
+ *
+ * @param firstName - The first name of the teacher
+ * @param lastName - The last name of the teacher
+ * @returns A string with the first letter of the first name followed by the full last name
+ */
+const printTeacher: printTeacherFunction = (
+  firstName: string,
+  lastName: string
+): string => {
+  return `${firstName[0]}. ${lastName}`;
+};
