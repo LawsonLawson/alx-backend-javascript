@@ -7,3 +7,8 @@ export interface Teacher {
     location: string;
     [propName: string]: any;
 }
+
+// Task 2: Directors Interface
+export interface Directors extends Teacher {
+  numberOfReports: number;
+}
