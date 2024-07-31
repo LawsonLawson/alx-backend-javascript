@@ -40,3 +40,52 @@ const printTeacher: printTeacherFunction = (
 ): string => {
   return `${firstName[0]}. ${lastName}`;
 };
+
+// Task 4: Writing a Class
+/**
+ * Constructor interface for creating a new StudentClass instance.
+ */
+export interface StudentConstructor {
+  new(firstName: string, lastName: string): StudentClassInterface;
+}
+
+/**
+ * Interface representing a student class with required methods.
+ */
+export interface StudentClassInterface {
+  readonly firstName: string;
+  readonly lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+/**
+ * StudentClass implementing StudentClassInterface with methods and properties.
+ */
+export const StudentClass: StudentConstructor = class StudentClass implements StudentClassInterface {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  /**
+   * Method indicating that the student is currently working on homework.
+   *
+   * @returns A string indicating the student is working
+   */
+  workOnHomework() {
+    return 'Currently working';
+  }
+
+  /**
+   * Method to display the student's first name.
+   *
+   * @returns The first name of the student
+   */
+  displayName() {
+    return this.firstName;
+  }
+}
