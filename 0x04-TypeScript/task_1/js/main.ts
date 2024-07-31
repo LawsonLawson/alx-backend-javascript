@@ -1,4 +1,7 @@
 // Task 1: Teacher Interface
+/**
+ * Represents a Teacher with mandatory and optional properties.
+ */
 export interface Teacher {
     readonly firstName: string;
     readonly lastName: string;
@@ -9,6 +12,9 @@ export interface Teacher {
 }
 
 // Task 2: Directors Interface
+/**
+ * Represents a Director who extends the Teacher interface with additional property.
+ */
 export interface Directors extends Teacher {
   numberOfReports: number;
 }
