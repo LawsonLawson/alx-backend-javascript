@@ -1,0 +1,22 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "ALX unittest basics in Node.js",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alx-backend-javascript/0x06-unittest_in_js.git"
+  },
+  "keywords": [],
+  "author": "Lawson Israel Pascal",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+	  "chai": "^4.3.7",
+	  "mocha": "^10.2.0",
+	  "sinon": "^15.1.2"
+  }
+}
